@@ -14,7 +14,6 @@ function App() {
   const [answers, setAnswers] = useState("");
   const [result, setResult] = useState("");
   const { data, isLoading, refetch, isFetching } = useGetQuestionsQuery();
-  console.log("data", data?.results[0]);
 
   const question = data?.results[0];
 
